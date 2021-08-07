@@ -1,0 +1,35 @@
+{% extends "template.html" %}
+{% block conteudo %}
+
+            <form method="post" action="{{ url_for('criar') }}" class="row g-3 align-items-center">
+                <fieldset>
+                    <div class="mb-3">
+                        <label for="id" class="form-label">Id</label>
+                        <input type="text" id="id" name="id" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="marca" class="form-label">Marca</label>
+                        <input type="text" id="marca" name="marca" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="modelo" class="form-label">Modelo</label>
+                        <input type="text" id="modelo" name="modelo" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="cor" class="form-label">Cor</label>
+                        <input type="text" id="cor" name="cor" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="combustivel" class="form-label">Combustível</label>
+                        <input type="text" id="combustivel" name="combustivel" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="ano" class="form-label">Ano</label>
+                        <input type="text" id="ano" name="ano" class="form-control">
+                    </div>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                    <button type="submit" class="btn btn-outline-dark btn-lg btn-salvar">Salvar</button>
+                    </div>
+                </fieldset>
+            </form>
+{% endblock %}
